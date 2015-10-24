@@ -1,0 +1,19 @@
+struct LogEntry{
+  string candidate;  投票姓名
+  int time; 投票时间 
+};
+string findWinner(int time, vector<LogEntry> &logs); 让找出在这个时间时候的winner
+c1(1), c2(2), c1(2), c2(3),c2(4) 括号里是投票时间。 所以
+findWinner(2, logs) = c1;
+findWinner(4, logs) = c2;
+用的hash表。找出最多的那个（投票在此时间后的不算）
+
+第二题（follow up）
+给一个时间，找出前k个winner。
+我的做法是用hash表 先统计每个candidate的票数， 形成一个array，然后就是找前k大个数。 用的quick select。刚刚写完，partition的时候估计有bug。
+
+回馈地里， 求bless。
+还是把一面的情况也说说吧。
+string encode(vector<string>& list);
+vector<string> decode(string s);
+这一题出现过， 可以搜。 估计做的太慢， 加面一轮。
