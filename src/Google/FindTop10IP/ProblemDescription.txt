@@ -1,0 +1,21 @@
+10个机器，每个存有100G的ip地址，怎样找到出现次数最多的10个ip
+
+need to ask interviewer what's the bottleneck first.
+
+
+hashcode of ip String
+hascode % 5000;
+about 200 MB per file; (how to distribute them? better to
+	distribute first).
+for larger generated file, we could apply the idea again.
+ex. hascode % 50000 
+
+use hashmap to record frequency for each ip in each file
+
+k way external merge sort, min Heap
+
+In order to reduce I/O, we could have a buffer when we 
+read each file.
+
+or find top 10 in each machine to reduce network bandwith
+cost, need to map all the ip address to 10 machines first
