@@ -1,0 +1,9 @@
+给一组id和表示每个id出现概率的数组,概率之和为1.要求随机
+成id,使得随机出的id满足之前的概率数组。followup:如果id 很多,调 这个随机生成方法的次数也很多,怎么优化
+
+Follow up analysis:
+1. bucket sort + binary search 
+2. Allocate enough buckets according to the precision of the double.
+
+
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&action=printable&tid=140077
