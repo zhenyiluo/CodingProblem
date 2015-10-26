@@ -1,0 +1,4 @@
+背包问题的变形，物品可切分，限制条件是如果放则必须放当前总体积的一半以上，求最后的最大价值。
+followup: dp的空间优化
+
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&action=printable&tid=140077
