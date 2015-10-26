@@ -1,0 +1,4 @@
+FJ is going to do some shopping, and before that, he needs some boxes to carry the different kinds of stuff he is going to buy. Each box is assigned to carry some specific kinds of stuff (that is to say, if he is going to buy one of these stuff, he has to buy the box beforehand). Each kind of stuff has its own value. Now FJ only has an amount of W dollars for shopping, he intends to get the highest value with the money.
+
+
+http://acm.hdu.edu.cn/showproblem.php?pid=3449
