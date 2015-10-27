@@ -1,0 +1,1 @@
+判断一个字符串是否存在某个permutation是palindrome？
