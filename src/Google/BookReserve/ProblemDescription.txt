@@ -1,0 +1,5 @@
+开始给一共book 的class。里面有一些variable 比如string author；string title；等 叫我实现function，findbookbyauthor() and findbookbytitle(); 开始犹豫用两个hashmap会不会太占空间，跟面试官交流了一下，说没问题。那就开始写了。这个函数问题是同一个author肯能会有好多book，所以在map里面存的是一共linkedlist不是直接book。follow up一是怎么加一共排队序列，就是可能有一些人要预约这本书，再follow这个排队序列可能是有一些用户有高priority怎么处理，再follow up现在有一个rating，每本书都有评分，怎么找到所有books在给定的rating范围内。就好了。
+
+
+
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=140029&extra=page%3D2%26filter%3Dsortid%26sortid%3D311%26sortid%3D311
