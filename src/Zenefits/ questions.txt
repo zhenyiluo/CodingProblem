@@ -1,0 +1,163 @@
+Remove nth Node from the end of Node
+Find element in rotate array
+design a online application for bank account
+
+
+
+面试的是一个白人小哥，上来扯了一下简历，然后算法
+
+题目很简单，进制转换，接口是给了数字和base，要计算给出的base下的结果。
+
+又问了一题是用刚刚实现的那个函数去查找，结果中4有多少。我就Brute force。
+
+
+
+
+棋盘问题，有obstacle, 用x表示，还有若干的机器人，用1来表示，0表示没有机器人和obstacle的位置,求一个位置使所有机器人到该位置的距离和最小，没见过这个题目，已挂，有思路的朋友请留言
+(跑n次bfs求和最小。n是机器人个数?)
+
+
+
+还是上个月面的   第一题是在数组中找到差值为K的所有pair，没有duplicates。。先说了hashmap的做法，面试的人说不要用hashmap。。然后就说先sort，然后用two pointers扫吧。。这个很快就写完了，test case也都过了。。第二题是flip bits.. 假设array是 10010010 找到一个区间flip bits（0变成1， 1变成0）使得flip后1的数量最多。这个例子结果可以是flip区间【1，5】 或 【1，7】,这样结果都为6~
+
+
+Trapping Rain Water, LC原题，写了DP, 面试者要求用Time O(n), Space O(1), 就是双指针
+
+// 1 1 1 1 1 0
+// 1 0 1 0 0 1       i)  =>  2
+// 1 0 1 0 0 1       ii) =>  1
+// 1 1 0 1 1 1
+
+// write a library/class that provides two functions / methods
+// i) count the number of 'islands' that the matrix has
+// ii) count the number of 'lakes' that the matrix has i.e. connected clump of zeros that is entirely surrounded by a single island2 
+
+
+
+很简单，但写的不好3 
+word break 微变! 
+找的是字典里可以拆分成其他单词的最长词。
+
+与word bread不同的是，自己本来就在字典里不能算。
+// ["coat", "rain", "highwayrobber", "dog", "catcher", "dogcatcher", "catch", "raincoat"] => "dogcatcher"
+highwayrobber虽然最长，但是不能拆分成其他词。
+其实在递归寻找前，把这个词从字典里删掉即可1
+
+
+
+leetcode 原题。
+contains duplicate 1 2 3
+1,2好弄.
+3的时候，开始说了个方法，小哥不满意。不知道怎么搞，后来小哥非要用BST
+墨迹半天没搞出来。
+
+
+三哥，态度蛮好，一个小时两道题：1.previous permutation 2. input : long t, int[] d, find triplets that d[i]<=d[j]<=d[k] and d[i]+d[j]+d[k]<=t 
+
+ multiply strings
+construct tree from inorder and preorder
+
+
+
+
+
+店面是一个台湾小哥，问的是给一个binary tree，打印所有从root到leaf的数字比如：
+         1
+    2         3
+4
+打印1-2-4， 1－3
+
+当然第一个想法是recursive，不过小哥不让recursive只好用stack做。不过好在这题不难，貌似lc有几乎差不多的题？面完了之后就拿到onsite了。看了看onsite的题目... 感觉难度很看面试官心情啊... 于是来此发个帖攒人品～
+
+
+
+好直接，就是LRU。
+leetcode一样，实现put（key, val）和get(key)。
+
+要用doubleLinkedList和HashMap实现。
+
+
+
+
+
+ // An "expression" is either a number, or a list (AKA vector/array) with the
+first element one of '+', '-', '*', '/' , and then other expressions. Write
+a function "evaluate" that gets an expression and returns its value.
+// ['+', 1, 2] --> 3
+// ['*', 3, ['+', 1, 10]] --> 33
+// ['+', 1000, 1200] --> 2200
+// ['/', 6, ['+', 1, ['*', 1, 1]]] --> 3
+// ['+', 1, 2, 3] --> 6
+// ['+', ['*', 1, 2], 3] --> 5
+// Assume - / -- only take two operands
+// + * take any number of operands
+
+
+
+// Given two numbers n and m, represent n as a product of m of its factors
+// E.g. n = 5, m = 2 => 1 * 5
+// m = 3, 1 * 1 * 5
+// E.g. n = 64, m = 3 => 1 * 1 * 64, 1 * 2 * 32, ..., 4 * 4 * 4
+
+
+
+第一轮电面：白人小哥，sqrt(x)和number of islands，都是leetcode原题
+第二轮店面：ABC. Iterator of Iterators, 这是要自己设计一个数据结构来实现这个功能9 J
+
+
+
+
+刚刚面完，面试官是个阿三
+
+题目是给一个无向图，找这个无向图能构成几个三角形
+
+大概30分钟搞定了，然后三哥给的case我过了，让我自己写一个case，把自己的程序测挂了，no zuo no die啊。
+有个小问题，改对了。
+
+我问还有别的问题嘛，阿三说没了。
+
+然后。。就没问我别的问题了，原来一个小时的面试，40分钟就给结束了。
+
+~~~~(>_<)~~~~  估计得挂了
+
+
+
+
+
+
+ 1. 给一个数组，找peak1 =
+// [23, 40, 50, 60, 80, 75, 74, 35] - 80 =
+// [90, 80, 70, 60, 65, 75] - 60
+
+2. follow up
+当有多个peak，找出第一个peak
+
+
+1）random shuffle string
+2) 跟wepay 第二题很像，也是给dictionary 和 单词要match, 用trie做；
+
+
+1. 输入一个字符串 “Interview and Career”，输出：每个单词出了第一个和最后一个字母，其余顺序随机，例如：“Itenrievw and Cerear”; 
+2.实现trie
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=8398&extra=page%3D5%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=8379&extra=page%3D5%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=8602&extra=page%3D5%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=8747&extra=page%3D5%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=9554&extra=page%3D4%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=9489&extra=page%3D4%26filter%3Dtypeid%26typeid%3D60 (Moving window minimum）
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=9206&extra=page%3D4%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=9009&extra=page%3D4%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=8999&extra=page%3D4%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=8392&extra=page%3D5%26filter%3Dtypeid%26typeid%3D60
+
+http://www.meetqun.com/forum.php?mod=viewthread&tid=9005&extra=page%3D5%26filter%3Dtypeid%26typeid%3D60
